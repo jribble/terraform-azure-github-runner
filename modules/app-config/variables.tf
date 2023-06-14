@@ -38,6 +38,10 @@ variable "azure_vm_size" {
   type = string
 }
 
+variable "azure_vm_priority" {
+  type = string
+}
+
 variable "azure_app_config_owners" {
   type = list(string)
 }

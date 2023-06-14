@@ -80,6 +80,7 @@ module "app_config" {
   azure_subscription_id             = var.azure_subscription_id
   azure_gallery_image_id            = var.azure_gallery_image_id
   azure_vm_size                     = var.azure_vm_size
+  azure_vm_priority                 = var.azure_vm_priority
   azure_service_bus_namespace_uri   = module.service_bus.service_bus_namespace_uri
   azure_github_webhook_events_queue = module.service_bus.github_webhook_events_queue
   azure_github_runners_queue        = module.service_bus.github_runners_queue

@@ -10,6 +10,7 @@ locals {
     "azure-gallery-image-id"            = var.azure_gallery_image_id
     "azure-gallery-image-type"          = var.azure_gallery_image_type
     "azure-vm-size"                     = var.azure_vm_size
+    "azure-vm-priority"                 = var.azure_vm_priority
     "azure-service-bus-namespace-uri"   = var.azure_service_bus_namespace_uri
     "azure-github-webhook-events-queue" = var.azure_github_webhook_events_queue
     "azure-github-runners-queue"        = var.azure_github_runners_queue

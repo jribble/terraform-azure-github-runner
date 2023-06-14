@@ -60,6 +60,7 @@ export const createVM = async (name) => {
         galleryImageId,
         galleryImageType,
         vmSize,
+        vmPriority,
         adminPassword,
         customData,
         runnerIdentity,
@@ -70,6 +71,7 @@ export const createVM = async (name) => {
         getConfigValue("azure-gallery-image-id"),
         getConfigValue("azure-gallery-image-type"),
         getConfigValue("azure-vm-size"),
+        getConfigValue("azure-vm-priority"),
         getSecretValue("azure-runner-default-password"),
         getConfigValue("custom-data-script-base64-encoded"),
         getConfigValue("github-runner-identity"),
@@ -98,7 +100,7 @@ export const createVM = async (name) => {
             hardwareProfile: {
                 vmSize,
             },
-            priority: "Spot",
+            priority: vmPriority,
             evictionPolicy: "Delete",
             storageProfile: {
                 imageReference: (() => {

@@ -51,6 +51,11 @@ variable "azure_vm_size" {
   default = "Standard_D2_v4"
 }
 
+variable "azure_vm_priority" {
+  type    = string
+  default = "Spot"
+}
+
 variable "owners" {
   type    = list(string)
   default = []
